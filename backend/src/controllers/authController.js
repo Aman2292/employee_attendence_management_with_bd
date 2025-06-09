@@ -44,7 +44,7 @@ exports.login = async (req, res) => {
 
 // POST /auth/signup
 exports.signup = async (req, res) => {
-  const {name,  email, password ,role='admin'} = req.body;
+  const {name,  email, password ,role='employee'} = req.body;
 
   try {
  
