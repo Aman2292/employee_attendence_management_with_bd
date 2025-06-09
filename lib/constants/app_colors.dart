@@ -17,16 +17,16 @@ class AppColors {
   static const Color textDark = Color(0xFF1B1E25); // Dark text
   static const Color textLight = Color(0xFFE9E9E9); // Light text
 
-  // Optional Defaults (keeping these for completeness, adjust if needed)
+  // Optional Defaults 
   static const Color divider = Color(0xFFE0E0E0);
   static const Color inactive = Color(0xFFBDBDBD);
   static const Color shadow = Color(0x1A000000); // 10% opacity black
   static const Color overlay = Color(0x80000000); // 50% opacity black
 
-  // Job status (mapped from status)
-  static const Color activeJob = success;
-  static const Color pendingJob = buttonColor;
-  static const Color rejectedJob = Color.fromARGB(255, 254, 31, 35);
+  // attendence status (mapped from status)
+  static const Color attendencepresent = success;
+  static const Color attendencelate = buttonColor;
+  static const Color attendenceabsent = Color.fromARGB(255, 254, 31, 35);
 
-  static const Color secondary = Color(0xFF6C757D); // Secondary gray (unchanged)
+  static const Color secondary = Color(0xFF6C757D); 
 }

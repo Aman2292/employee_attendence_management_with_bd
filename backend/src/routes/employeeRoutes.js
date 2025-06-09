@@ -9,7 +9,8 @@ router.use(authMiddleware);
 router.use(adminOnlyMiddleware);
 
 // Admin-only routes
-router.post('/', employeeController.addEmployee);
-router.get('/', employeeController.getEmployees);
+router.post('/addemployees', employeeController.addEmployee);
+router.get('/getemployees', employeeController.getEmployees);
+router.patch('/verify', employeeController.verifyEmployee); 
 
 module.exports = router;

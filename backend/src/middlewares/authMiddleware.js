@@ -3,7 +3,6 @@ const { jwtSecret } = require('../configs/jwtConfig');
 
 // Middleware to authenticate JWT token
 const authMiddleware = (req, res, next) => {
-  // Get token from header
   const token = req.header('Authorization')?.replace('Bearer ', '');
 
   if (!token) {
@@ -11,10 +10,7 @@ const authMiddleware = (req, res, next) => {
   }
 
   try {
-    // Verify token
     const decoded = jwt.verify(token, jwtSecret);
-
-    // Attach user to request object
     req.user = decoded;
     next();
   } catch (err) {
@@ -24,7 +20,7 @@ const authMiddleware = (req, res, next) => {
 
 // Middleware to check if the user is an Admin
 const adminOnlyMiddleware = (req, res, next) => {
-  if (req.user.role !== 'Admin') {
+  if (req.user.role !== 'admin') {
     return res.status(403).json({ error: 'Access denied. Admin only.' });
   }
   next();

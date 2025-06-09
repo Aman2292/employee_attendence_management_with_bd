@@ -16,7 +16,7 @@ const officeLocationSchema = new mongoose.Schema({
   radiusMeters: {
     type: Number,
     required: true,
-    default: 100 // Default radius of 100 meters
+    default: 100 
   }
 });
 

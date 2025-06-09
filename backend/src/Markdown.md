@@ -1,0 +1,33 @@
+```
+└── 📁backend
+    └── 📁src
+        └── .env
+        └── app.js
+        └── 📁configs
+            └── db.js
+            └── jwtConfig.js
+        └── 📁controllers
+            └── attendanceController.js
+            └── authController.js
+            └── employeeController.js
+        └── 📁middlewares
+            └── authMiddleware.js
+        └── 📁models
+            └── Attendance.js
+            └── OfficeLocation.js
+            └── User.js
+        └── 📁routes
+            └── attendanceRoutes.js
+            └── authRoutes.js
+            └── employeeRoutes.js
+        └── 📁services
+            └── attendanceService.js
+            └── authService.js
+            └── locationValidationService.js
+            └── userService.js
+        └── 📁utils
+            └── jwtUtils.js
+            └── locationUtils.js
+    └── package-lock.json
+    └── package.json
+```
