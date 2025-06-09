@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../constants/app_colors.dart';
-import '../constants/app_text_styles.dart';
-import '../constants/app_dimensions.dart';
+import '../../constants/app_colors.dart';
+import '../../constants/app_text_styles.dart';
+import '../../constants/app_dimensions.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -9,7 +9,7 @@ class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.background,
+    
       body: SafeArea(
         child: Column(
           children: [
@@ -21,14 +21,15 @@ class WelcomeScreen extends StatelessWidget {
                 color: AppColors.buttonColor,
                 borderRadius: const BorderRadius.only(
                   bottomLeft: Radius.circular(AppDimensions.radiusXXL),
-                  bottomRight: Radius.circular(AppDimensions.radiusXXL),
+                  bottomRight: Radius.circular(AppDimensions.radiusXXL ),
                 ),
               ),
-              child: Image.asset(
-                'assets/images/welcome_screen_.png',
-                height: 550,
-              
-                fit: BoxFit.fitWidth,
+              child: Center(
+                child: Image.asset(
+                  'assets/images/welcome_screen_.png',
+                  height: 500,
+                  fit: BoxFit.contain,
+                ),
               ),
             ),
 
@@ -36,7 +37,8 @@ class WelcomeScreen extends StatelessWidget {
 
             // Title
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: AppDimensions.paddingL),
+              padding: const EdgeInsets.symmetric(
+                  horizontal: AppDimensions.paddingL),
               child: Text(
                 'Welcome to UnSquare \n Attendence App.',
                 style: AppTextStyles.pageTitle,
@@ -47,7 +49,8 @@ class WelcomeScreen extends StatelessWidget {
 
             // Subtitle
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: AppDimensions.paddingL),
+              padding: const EdgeInsets.symmetric(
+                  horizontal: AppDimensions.paddingL),
               child: Text(
                 'Be Punctual to the working place.',
                 style: AppTextStyles.bodyRegular,
@@ -58,7 +61,8 @@ class WelcomeScreen extends StatelessWidget {
 
             // Log In Button
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: AppDimensions.paddingL),
+              padding: const EdgeInsets.symmetric(
+                  horizontal: AppDimensions.paddingL),
               child: SizedBox(
                 width: double.infinity,
                 height: AppDimensions.buttonHeightL,
@@ -69,7 +73,8 @@ class WelcomeScreen extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: AppColors.buttonColor,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(AppDimensions.radiusL),
+                      borderRadius:
+                          BorderRadius.circular(AppDimensions.radiusL),
                     ),
                   ),
                   child: Text('Log in', style: AppTextStyles.buttonPrimary),
@@ -81,7 +86,8 @@ class WelcomeScreen extends StatelessWidget {
 
             // Sign Up Button
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: AppDimensions.paddingL),
+              padding: const EdgeInsets.symmetric(
+                  horizontal: AppDimensions.paddingL),
               child: SizedBox(
                 width: double.infinity,
                 height: AppDimensions.buttonHeightL,
@@ -91,7 +97,8 @@ class WelcomeScreen extends StatelessWidget {
                   },
                   style: OutlinedButton.styleFrom(
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(AppDimensions.radiusL),
+                      borderRadius:
+                          BorderRadius.circular(AppDimensions.radiusL),
                     ),
                     side: const BorderSide(color: AppColors.success),
                   ),

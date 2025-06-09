@@ -29,4 +29,6 @@ class AppColors {
   static const Color attendenceabsent = Color.fromARGB(255, 254, 31, 35);
 
   static const Color secondary = Color(0xFF6C757D); 
+  static const Color primaryColor = Color.fromARGB(255, 116, 116, 35);
+  static const Color borderColor=Color.fromARGB(146, 58, 58, 58);
 }

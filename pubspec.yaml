@@ -18,6 +18,11 @@ dependencies:
   flutter_svg: ^2.0.10+1
   intl: ^0.18.0
   iconsax: ^0.0.8
+  http: ^1.4.0
+  shared_preferences: ^2.2.2
+  # flutter_secure_storage: ^5.0.2
+  geolocator: ^9.0.2
+  provider: ^6.1.1
 
 dev_dependencies:
   flutter_test:
